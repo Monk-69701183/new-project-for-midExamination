@@ -3608,3 +3608,179 @@ select:focus-visible {
     }
 
 }
+
+/* =========================================
+   CONTACT SUCCESS
+   ========================================= */
+
+.contact-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 360px;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    box-sizing: border-box;
+
+    animation:
+        contactSuccessIn 0.35s ease;
+}
+
+
+/* =========================================
+   SUCCESS ICON
+   ========================================= */
+
+.contact-success > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 22px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(124, 92, 255, 0.12);
+
+    border:
+        1px solid
+        rgba(124, 92, 255, 0.25);
+
+    color: var(--primary);
+
+    font-size: 2.5rem;
+
+    box-shadow:
+        0 10px 30px
+        rgba(124, 92, 255, 0.12);
+}
+
+
+/* =========================================
+   SUCCESS TITLE
+   ========================================= */
+
+.contact-success h3 {
+    margin: 0 0 10px;
+
+    color: var(--text-primary);
+
+    font-size: 1.5rem;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   SUCCESS DESCRIPTION
+   ========================================= */
+
+.contact-success p {
+    max-width: 450px;
+
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   SUCCESS ANIMATION
+   ========================================= */
+
+@keyframes contactSuccessIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px)
+            scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+/* =========================================
+   CONTACT SUCCESS RESPONSIVE
+   ========================================= */
+
+@media (max-width: 767.98px) {
+
+    .contact-success {
+        min-height: 300px;
+
+        padding: 40px 20px;
+    }
+
+    .contact-success > i {
+        width: 70px;
+        height: 70px;
+
+        font-size: 2.2rem;
+    }
+
+    .contact-success h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-success p {
+        font-size: 0.85rem;
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+    .contact-success {
+        min-height: 260px;
+
+        padding: 35px 16px;
+    }
+
+    .contact-success > i {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 18px;
+
+        font-size: 1.9rem;
+    }
+
+    .contact-success h3 {
+        font-size: 1.2rem;
+    }
+
+}
