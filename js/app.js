@@ -128,7 +128,7 @@ function createGameCard(game) {
 
     return `
 
-        <div class="col-sm-6 col-lg-3">
+        <div class="col-6 col-sm-6 col-lg-3">
 
 
             <div

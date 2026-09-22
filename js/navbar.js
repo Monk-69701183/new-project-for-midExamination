@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     onclick="goToPage('index.html')"
                     aria-label="Go to Home"
                 >
-                    🎮 GAME<span>PLAYING</span>
+                    🎮 GAME<span>FINDER</span>
                 </button>
 
 
